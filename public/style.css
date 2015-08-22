@@ -1,0 +1,40 @@
+body { 
+	padding-top:20px;
+}
+
+.jumbotron {
+	font-weight: bold;
+	font-family: Georgia, serif;
+}
+
+
+.salesDetail {
+	font-weight: bold;
+}
+
+.salesDetail .img-responsive {
+    margin: 0 auto;
+}
+
+.saleTitle {
+	
+}
+
+.saleTime {
+	
+}
+
+.saleLocation {
+	
+}
+
+#kennethPic {
+	width: 30%; 
+	height: 30%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#contactInfo {
+	font-size: 21px;
+}

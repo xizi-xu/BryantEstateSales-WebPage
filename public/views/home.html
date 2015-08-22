@@ -1,3 +1,33 @@
 <div class="jumbotron text-center">
-	<h2> Welcome to Bryant Estate Sales!</h2>
+	<div class="container">
+		<div class = "row">
+			<div class="col-md-8">
+				<h1 style="font-size: 55px"> Welcome to <br>Bryant Estate Sales!</h1>
+			</div>
+			<div class="col-md-4">
+				<img ng-src="{{ logo }}" alt="logo" style="width: 90%; height: 90%">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="salesDetail text-center container-fluid">
+	<div class = "row bg-primary">
+			<h1> Two Great Sales!<br>This Week!</h1>
+	</div>
+	<div ng-repeat="sale in sales" class="col-md-6">
+		<div class="row">
+			<h3 class="saleTitle">{{ sale.title }}</h3>
+			<img ng-src="{{ sale.img1 }}" class="img-thumbnail img-responsive">
+		</div>
+
+		<div class="row">
+			<h3 class="saleTime"> {{ sale.satTime }} <br> {{ sale.sunTime }}</h3>
+			<img ng-src="{{ sale.img2 }}" class="img-thumbnail img-responsive">
+		</div>
+
+		<div class="row">
+			<h3 class="saleLocation"> {{ sale.address }}</h3>
+		</div>
+	</div>
 </div>
