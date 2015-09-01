@@ -2,9 +2,14 @@ body {
 	padding-top:20px;
 }
 
+.navbar {
+	margin-bottom: 0px;
+}
+
 .jumbotron {
 	font-weight: bold;
 	font-family: Georgia, serif;
+	margin-bottom: 0px;
 }
 
 
