@@ -19,5 +19,5 @@ angular.module('mainCtrl', []).controller('mainController', function($scope) {
 			img2: 'img/home/bramble-7.jpg'
 		}
 	]
-	$scope.startingTime = 'Numberss will be avaiable at 8am on Saturday'
+	$scope.startingTime = 'Numbers will be avaiable at 8am on Saturday'
 });
