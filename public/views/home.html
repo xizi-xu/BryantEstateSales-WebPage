@@ -5,7 +5,7 @@
 				<h1> Welcome to <br>Bryant Estate Sales!</h1>
 			</div>
 			<div class="col-md-4">
-				<img ng-src="{{ logo }}" alt="logo">
+				<img ng-src="{{ logo }}" alt="logo" style="width:90%; height:90%;">
 			</div>
 		</div>
 	</div>
@@ -17,18 +17,22 @@
 	<div ng-repeat="sale in sales">
 		<div class="row">
 			<div class="col-md-4">
-				<h3 class="saleTitle">{{ sale.title }}</h3>
-				<img ng-src="{{ sale.img1 }}" class="img-thumbnail img-responsive">
+				
+				<h2>{{ sale.title }}</h2>
+				<h2>{{ sale.satTime }}</h2>
+				<h2>{{ sale.sunTime }}</h2>
+				<h2>{{ sale.address }}</h2>
+
+				<button type="button" class="btn btn-info btn-lg btn-block">Direction</button>
+				<button type="button" class="btn btn-success btn-lg btn-block">More Pictures</button>
+
 			</div>
 			<div class="col-md-4">
-				<h3 class="saleTime"> {{ sale.satTime }} <br> {{ sale.sunTime }}</h3>
-				<img ng-src="{{ sale.img2 }}" class="img-thumbnail img-responsive">
+				<img ng-src="{{ sale.img3 }}" class="thumbnail img-responsive">
 			</div>
 			<div class="col-md-4">
-				<h3 class="saleLocation"> {{ sale.address }} </h3>
-				<img ng-src="{{ sale.img3 }}" class="img-thumbnail img-responsive">
+				<img ng-src="{{ sale.img2 }}" class="thumbnail img-responsive">
 			</div>
 		</div>
-		<div></div>
 	</div>
 </div>
