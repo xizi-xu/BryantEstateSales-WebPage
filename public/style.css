@@ -1,18 +1,25 @@
 /* index.html */
 .navbar {
-	margin: auto 5%;
+	margin: auto 7%;
 }
 
 /* home.html */
 .jumbotron {
-	height: 550px;
+	/*background-color: #AFEEEE;*/
 	font-weight: bold;
 	font-family: Georgia, serif;
-	margin-bottom: 0px;
+	margin: auto;
 }
 
 .salesDetail {
 	font-weight: bold;
+	text-align: center;
+}
+
+.salesDetail h1 {
+	font-family: "Arial Black", Gadget, sans-serif;
+	margin-top: 2%;
+	margin-bottom: 2%;
 }
 
 .salesDetail .img-responsive {
@@ -20,7 +27,7 @@
 }
 
 .saleTitle {
-	
+
 }
 
 .saleTime {
