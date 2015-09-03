@@ -49,7 +49,7 @@ body {
 
 .thumbnail {
 	width: auto; 
-	height: 500px;
+	height: 350px;
 }
 
 /* about.html */
@@ -61,3 +61,10 @@ body {
 }
 
 /* contact.html */
+
+/* photo.html */
+.photolayout {
+	width: auto; 
+	height: 300px;
+	margin-top: 8%;
+}
