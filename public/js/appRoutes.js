@@ -16,7 +16,12 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 		.when('/contact', {
 			templateUrl: 'views/contact.html',
 			controller: 'contactController'	
-		});
+		})
+
+		.when('/photo', {
+			templateUrl: 'views/photo.html',
+			controller: 'photoController'
+		})
 
 	$locationProvider.html5Mode(true);
 

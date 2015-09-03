@@ -3,6 +3,7 @@
 		<div class = "row">
 			<div class="col-md-8">
 				<h1> Welcome to <br>Bryant Estate Sales!</h1>
+				 <p><a class="btn btn-primary btn-lg" href="/about" role="button">Learn more</a></p>
 			</div>
 			<div class="col-md-4">
 				<img ng-src="{{ logo }}" alt="logo" style="width:90%; height:90%;">
@@ -16,23 +17,26 @@
 	<h1>{{ tagline }}</h1>
 	<div ng-repeat="sale in sales">
 		<div class="row">
+			<h3>{{ sale.title }}</h3>
+			<div ng-repeat="img in sale.imgs"
 			<div class="col-md-4">
-				
-				<h2>{{ sale.title }}</h2>
-				<h2>{{ sale.satTime }}</h2>
-				<h2>{{ sale.sunTime }}</h2>
-				<h2>{{ sale.address }}</h2>
-
-				<button type="button" class="btn btn-info btn-lg btn-block">Direction</button>
-				<button type="button" class="btn btn-success btn-lg btn-block">More Pictures</button>
-
-			</div>
-			<div class="col-md-4">
-				<img ng-src="{{ sale.img3 }}" class="thumbnail img-responsive">
-			</div>
-			<div class="col-md-4">
-				<img ng-src="{{ sale.img2 }}" class="thumbnail img-responsive">
+				<img ng-src="{{ img }}" class="thumbnail img-responsive">
 			</div>
 		</div>
+		<div class="row">
+			<h3>{{ sale.satTime }} {{ sale.sunTime }}</h3>
+			
+			<h3>{{ sale.address }}</h3>
+
+			<button type="button" class="btn btn-info btn-lg">
+				<a href="{{ sale.googleMap }}" target="_blank">Direction</a>
+			</button>
+
+			<button type="button" class="btn btn-success btn-lg">
+				<a href="/photo">More Pictures</a>
+			</button>
+		</div>
+		<h2 style="font-style: italic;">Numbers will be available at 8am on Saturday</h2>
 	</div>
+	<h1>See you on Saturday!</h1>
 </div>
